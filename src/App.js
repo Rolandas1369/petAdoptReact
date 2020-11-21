@@ -4,11 +4,8 @@ const Pet = (props) => {
     React.createElement("h2", {}, props.animal),
     React.createElement("h2", {}, props.breed),
     React.createElement("h2", {}, props.breed),
+    React.createElement("h2", {}, props.breed),
   ]);
-};
-
-const D = () => {
-  console.log("lls");
 };
 
 const App = () => {
