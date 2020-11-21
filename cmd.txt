@@ -5,3 +5,6 @@ npm i -D eslint eslint-config-prettier
 npm ci to install from package-lock
 add ESlint extension
 npm install -D parcel-bundler -> quick bundler
+npm intelisence vscode extension
+one component one file
+highlight function or method select to export to new file to get new module
