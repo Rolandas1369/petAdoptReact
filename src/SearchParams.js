@@ -4,6 +4,8 @@ import React, { useState } from "react";
 const SearchParams = () => {
   const [location, setLocation] = useState("Seattle, WA");
   const [animal, setAnimal] = useState("dog");
+  const [bread, setBread] = useState("");
+  const [breads, setBreads] = useState([]);
 
   return (
     <div className="search-params">
@@ -33,6 +35,24 @@ const SearchParams = () => {
           </option>
         ))}
       </select>
+      <label htmlFor="bread">
+        bread
+        <select
+          name=""
+          id="bread"
+          value={bread}
+          onChange={(e) => setBread(e.target.value)}
+          onBlur={(e) => setBread(e.target.value)}
+          disabled={breads.length === 0}
+        >
+          <option>All</option>
+          {breads.map((breadString) => (
+            <option key={breadString} value={breadString}>
+              {breadString}
+            </option>
+          ))}
+        </select>
+      </label>
 
       <button>Submit</button>
     </div>
