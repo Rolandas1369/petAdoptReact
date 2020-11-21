@@ -1,1 +1,6 @@
 npm install -D prettier
+prefferenex->settings formatonsave and require config check prettier
+set prettier as defaulf file formatter if doesnt work on save
+npm i -D eslint eslint-config-prettier
+npm ci to install from package-lock
+add ESlint extension
