@@ -8,3 +8,4 @@ npm install -D parcel-bundler -> quick bundler
 npm intelisence vscode extension
 one component one file
 highlight function or method select to export to new file to get new module
+vscode extension emmet to enable h2 tab div tab shortcuts
