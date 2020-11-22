@@ -17,4 +17,5 @@ ctrl+shift+up or down multi cursor
 alt+arrows moves all line
 prefereces -> keyboard shortcuts to update keys
 npm i -D eslint-plugin-react-hooks
-map((el) => (replaces return and {}))  
+map((el) => (replaces return and {})) 
+from promise pet.breeds("dog").then(console.log, console.error);
