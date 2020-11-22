@@ -11,8 +11,8 @@ const SearchParams = () => {
   useEffect(() => {
     setBreads([]);
     setBreed("");
-    pet.breeds(animal).then(({ breeds }) => {
-      const breedSting = breeds.map(({ name }) => name);
+    pet.breeds(animal).then(({ breeds: ApiBreads }) => {
+      const breedSting = ApiBreads.map(({ name }) => name);
       setBreads(breedSting);
     });
   }, [animal, setBreads, setBreed]); // dependencies on what effect updates

@@ -19,3 +19,6 @@ prefereces -> keyboard shortcuts to update keys
 npm i -D eslint-plugin-react-hooks
 map((el) => (replaces return and {})) 
 from promise pet.breeds("dog").then(console.log, console.error);
+[] in usefect runs only once
+ pet.breeds(animal).then(({ breeds: ApiBreads }) => { alias in js
+ React.Strict make sure project isnt using depreaceted things
