@@ -22,3 +22,4 @@ from promise pet.breeds("dog").then(console.log, console.error);
 [] in usefect runs only once
  pet.breeds(animal).then(({ breeds: ApiBreads }) => { alias in js
  React.Strict make sure project isnt using depreaceted things
+ reach routes handles accesabily more ok
