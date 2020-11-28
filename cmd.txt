@@ -27,3 +27,6 @@ from promise pet.breeds("dog").then(console.log, console.error);
  <Link> creates link inside
  props canont be changed
  + in front of string converts it to int
+ {...props} spraed props
+static getDerivedStateFromProps
+static getDerivedStateFromError() {

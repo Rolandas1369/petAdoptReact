@@ -5,6 +5,7 @@ export default class Courousel extends Component {
     photos: [],
     active: 0,
   };
+  // this is lifecycle merhod and must be exact
   // get props passes selected props to state
   static getDerivedStateFromProps({ media }) {
     let photos = ["http://placecorgi.com/600/600"];

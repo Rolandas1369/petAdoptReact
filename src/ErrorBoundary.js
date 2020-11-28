@@ -1,10 +1,12 @@
 import React, { Component } from "react";
-import { Link } from "@reach/router";
+import { Link, Redirect } from "@reach/router";
 
 export default class ErrorBoundary extends Component {
   state = {
-    hadError: false,
+    hasError: false,
+    redirect: false,
   };
+  // this is lifecycle merhod and must be exact
   static getDerivedStateFromError() {
     return { hasError: true };
   }
@@ -14,7 +16,18 @@ export default class ErrorBoundary extends Component {
     console.error("ErrorBoundry cought an Error", error, info);
   }
 
+  // if state changes in this case hadError true call this function
+  componentDidUpdate() {
+    if (this.state.hasError) {
+      setTimeout(() => this.setState({ redirect: true }), 5000);
+    }
+  }
+
   render() {
+    if (this.state.redirect) {
+      return <Redirect to="/"></Redirect>;
+    }
+
     if (this.state.hasError) {
       return (
         <h1>
