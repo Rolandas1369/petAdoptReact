@@ -9,7 +9,7 @@ class Details extends React.Component {
   };
 
   componentDidMount() {
-    throw new Error("error");
+    // throw new Error("error");
     pet.animal(this.props.id).then(({ animal }) => {
       this.setState({
         name: animal.name,
