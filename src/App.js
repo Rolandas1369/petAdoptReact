@@ -6,8 +6,9 @@ import Details from "./Details";
 import ThemeContext from "./ThemeContext";
 
 const App = () => {
+  // can be {one: 2}
   // as in hooks [color, setColor]
-  const themeHook = useState("darkblue");
+  const themeHook = useState("peru");
   return (
     // dark blue is passed to button
     // theme hooks becomes global state
