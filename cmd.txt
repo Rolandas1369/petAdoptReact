@@ -30,3 +30,12 @@ from promise pet.breeds("dog").then(console.log, console.error);
  {...props} spraed props
 static getDerivedStateFromProps
 static getDerivedStateFromError() {
+hooks example
+https://codesandbox.io/s/zr90v4jorp?file=/src/State.js
+useRef -> direct acces to function
+useReducer -> stateManagment
+useMemo -> slow methods perfmance
+useCalback -> slow methods performance
+useLayoutEffect -> if need to measure something in dom
+useImperativeHandle -> child controls parrent
+vscode-styled-component for autocomplyte

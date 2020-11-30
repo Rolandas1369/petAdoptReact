@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { render } from "react-dom";
 import SearchParams from "./SearchParams";
-import { Link, Router } from "@reach/router";
+import { Router } from "@reach/router";
 import Details from "./Details";
 import ThemeContext from "./ThemeContext";
+import NavBar from "./NavBar";
 
 const App = () => {
   // can be {one: 2}
@@ -14,9 +15,7 @@ const App = () => {
     // theme hooks becomes global state
     <ThemeContext.Provider value={themeHook}>
       <div>
-        <header>
-          <Link to="/">Adopt me</Link>
-        </header>
+        <NavBar></NavBar>
         <Router>
           <SearchParams path="/" />
           <Details path="/details/:id" />
